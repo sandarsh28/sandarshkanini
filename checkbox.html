@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function action(){
+                 
+                 java=document.f1.java;
+                 python=document.f1.python;
+                 c=document.f1.c;
+                 var check="";
+                 if(java.checked==true){
+                    check=check+"java"
+                 }
+                 if(python.checked==true){
+                    check=check+"python"
+                 }
+                 if(HTML.checked==true){
+
+                    check=check+"HTML"
+                 }
+                document.getElementById("abc").innerHTML="the subjects selected are"+check;
+                }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>checkbox</legend>
+        <table>
+            <form name="f1" action="">
+            <tr>
+                <td>
+                    NO.OF.BATCHES<br>
+                    <input type="radio" name="NO.OF.BATCHES">BATCH-1<br>
+                    <input type="radio" name="NO.OF.BATCHES">BATCH-2<br>
+                    <input type="radio" name="NO.OF.BATCHES">BATCH-3<br>
+                    <input type="radio" name="NO.OF.BATCHES">BATCH-4<br>
+
+                </td>
+                </tr>
+                <br>
+                <td>
+                    COURSES<br>
+                    <input type="checkbox" name="c1" id="JAVA">JAVA<br>
+                    <input type="checkbox" name="c2" id="PYTHON">PYTHON<br>
+                    <input type="checkbox" name="c3" id="c">c<br>
+
+                </td>
+                <tr>
+                    <td>
+                        
+                        <input type="button"  onclick="action()"; value="Submit" >
+                     </td>
+                </tr>
+
+            
+        </form>
+        </table>
+    </fieldset>
+    <p id="abc"></p>
+</body>
+
+</html>

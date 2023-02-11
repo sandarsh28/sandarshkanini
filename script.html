@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function action(){
+            
+            document.getElementById("abc").innerHTML="welcome"+document.f1.Name.value +"you are"+document.f1.gender.value+"your number is"+document.f1.Telephone.value;
+           
+                         }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Order</legend>
+        <form action="" name="f1" autocomplete="off">
+            <h2>Place your order here</h2>
+            <table border="2">
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input type="text" name="Name" id=""></td>
+            
+        
+                <tr>
+                    <td><label for="">Telephone</label></td>
+                    <td ><input type="tel" name="Telephone" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">E-Mail</label></td>
+                    <td><input type="text" name="E-Mail"></td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td><input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                </td>
+                </tr>
+                <tr>
+                    <td><label for="">Delivery Address</label></td>
+                    <td ><textarea name="" id="" cols="50" rows=""></textarea>
+                </tr>
+            </table>
+            <br>
+        </form>
+    </fieldset> 
+    <br>
+    <input type="button" onclick="action();" value="Submit">
+    <p id="abc"></p>
+</body>
+</html>
